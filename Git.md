@@ -8,7 +8,7 @@
 
 ### 一、Git简介
 
-![](C:\Users\Administrator\Desktop\Web\Git\git简介.png)
+![](D:\Git_REP\git\git简介.png)
 
 ​	优势：
 
@@ -22,7 +22,7 @@
 
 - 与linux命令全面兼容
 
-  ![Git结构](C:\Users\Administrator\Desktop\Web\Git\git结构.png)
+  ![Git结构](D:\Git_REP\git\git结构.png)
 
 ### 二、Git命令行操作
 
@@ -32,7 +32,7 @@
 
 ​		命令：**`git init`**
 
-![](C:\Users\Administrator\Desktop\Web\Git\git init.png)
+![](D:\Git_REP\git\git init.png)
 
 ##### 	2.设置签名
 
@@ -46,7 +46,7 @@
 
 ​			**`git config user.email xxx@xxx.xx`**
 
-​			![](C:\Users\Administrator\Desktop\Web\Git\config.png)
+​			![](D:\Git_REP\git\config.png)
 
 ​		系统用户级别：登录当前操作系统的用户范围
 
@@ -54,7 +54,7 @@
 
 ​			**`git config --global user.email xxx@xxx.xx`**	
 
-​			![](C:\Users\Administrator\Desktop\Web\Git\config global.png)
+​			![](D:\Git_REP\git\config global.png)
 
 ​		(优先使用项目级别，且必须设置签名)	
 
@@ -82,7 +82,7 @@
 
 ​	**`git reflog`**
 
-![](C:\Users\Administrator\Desktop\Web\Git\log.png)
+![](D:\Git_REP\git\log.png)
 
 ###### 5）版本定位
 
@@ -112,7 +112,7 @@
 
 ​	在版本控制过程中，使用多条线同时推进多个任务
 
-![](C:\Users\Administrator\Desktop\Web\Git\分支.png)
+![](D:\Git_REP\git\分支.png)
 
 ​	**`git branch [分支名]`	**创建分支
 
@@ -122,7 +122,7 @@
 
 ​	**合并分支：**	1.**`git checkout [被合并分支名]`	**
 
-​				2.**`git merge [有新内容的分支]`**![branch](C:\Users\Administrator\Desktop\Web\Git\branch.png)
+​				2.**`git merge [有新内容的分支]`**![branch](D:\Git_REP\git\branch.png)
 
 ​	**合并冲突：**	1.修改冲突文件
 
@@ -130,9 +130,9 @@
 
 ​				3.**`git commit -m "日志信息"`**
 
-![](C:\Users\Administrator\Desktop\Web\Git\branch-issue.png)
+![](D:\Git_REP\git\branch-issue.png)
 
-![](C:\Users\Administrator\Desktop\Web\Git\branch-resolve.png)
+![](D:\Git_REP\git\branch-resolve.png)
 
 #### 	远程库操作
 
@@ -142,15 +142,15 @@
 
 ​	`git push [远程地址别名] [分支名]`	 推送到指定远程分支
 
-![](C:\Users\Administrator\Desktop\Web\Git\remote.png)
+![](D:\Git_REP\git\remote.png)
 
 ​	`git clone [远程地址]`		克隆远程库到本地，同时创建origin远程库别名，初始化本地库
 
-​	![](C:\Users\Administrator\Desktop\Web\Git\remote-clone.png)
+​	![](D:\Git_REP\git\remote-clone.png)
 
 ​	**邀请成员**：只有通过该邀请，该成员才有权限提交更改
 
-![](C:\Users\Administrator\Desktop\Web\Git\collaborators.png)![](C:\Users\Administrator\Desktop\Web\Git\other-push.png)
+![](D:\Git_REP\git\collaborators.png)![](D:\Git_REP\git\other-push.png)
 
 ​	`git pull [远程库地址别名] [远程分支名] `		从远程库拉取更新到本地，同时本地库版本及内容会更新；pull = fetch + merge
 
@@ -178,17 +178,44 @@
 
 * 在github中新建ssh key
 
-  ![](C:\Users\Administrator\Desktop\Web\Git\sshkey.PNG)
+  ![](D:\Git_REP\git\sshkey.PNG)
 
-  ![sshkey-1](C:\Users\Administrator\Desktop\Web\Git\sshkey-1.png)
+  ![sshkey-1](D:\Git_REP\git\sshkey-1.png)
 
-  ![](C:\Users\Administrator\Desktop\Web\Git\sshlogin.png)
+  ![](D:\Git_REP\git\sshlogin.png)
 
-  
 
-### 三、Gitlab服务器环境搭建
+### 三、Git工作流
 
-### 四、Git图形界面操作
+​	在项目开发过程中使用git的方式
+
+#### 分类
+
+##### 	集中式工作流
+
+​	类似于svn，集中式工作流以中央仓库作为项目所有修改的单点实体，所有修改都提交到master分支上
+
+![](D:\Git_REP\git\集中式.png)	
+
+##### 	GitFlow工作流
+
+​	gitflow工作流通过功能开发，发布准备和	维护设置了独立的分支，让发布迭代更流畅，严格的分支模型也为大型项目提供一些非常必要的结构
+
+![](D:\Git_REP\git\GitFlow.PNG)
+
+##### 	Forking工作流
+
+​	forking工作流是在gitflow基础上，充分利用git的fork和pull request的功能以达到代码审核的目的。更适合安全可靠的管理大团队的开发者，而且能接受不信任贡献者的提交
+
+#### GitFlow工作流
+
+##### 	分支种类
+
+​	![](D:\Git_REP\git\分支种类.png)
+
+![](D:\Git_REP\git\gitflow实例.png)
+
+### 四、Gitlab服务器环境搭建
 
 ---
 
@@ -206,7 +233,7 @@
 
 ### win10凭据
 
-![](C:\Users\Administrator\Desktop\Web\Git\凭据.png)
+![](D:\Git_REP\git\凭据.png)
 
 ​		
 
